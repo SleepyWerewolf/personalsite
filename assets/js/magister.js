@@ -1,16 +1,17 @@
-// global. currently active menu item 
+// Currently active item
 var current_item = 0;
 
-// few settings
+// Fade duration settings
 var section_hide_time = 1000;
 var section_show_time = 1000;
 
-// jQuery stuff
 jQuery(document).ready(function($) {
 
 	// Switch section
-	$("a", '.mainmenu').click(function() 
-	{
+	$("a", '.mainmenu').click(switchSection);
+	$('.btn-contact').click(switchSection);
+
+	function switchSection() {
 		if( ! $(this).hasClass('active') ) { 
 			current_item = this;
 			// close all visible divs with the class of .section
@@ -22,5 +23,5 @@ jQuery(document).ready(function($) {
 			} );
 		}
 		return false;
-	});		
+	}
 });
