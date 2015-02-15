@@ -1,5 +1,5 @@
 html {
-	background:#505D6E url(../images/body4.jpg) no-repeat center center fixed; 
+	background:#505D6E url(../images/body2.jpg) no-repeat center center fixed; 
 	min-height:100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -14,7 +14,7 @@ body {
 	-webkit-overflow-scrolling: touch;
 	line-height: 1.5em;
 	font-size:14px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	color:#fff;
 	color:rgba(255,255,255,.8); 
 	font-weight: normal;
@@ -138,7 +138,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 .title,
 .subtitle { 
-	font-family: 'Wire One', Helvetica, Arial, sans-serif;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-weight:normal;
 	font-size:7em;
 	margin-bottom:15px; 
