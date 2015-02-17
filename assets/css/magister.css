@@ -20,6 +20,21 @@ body {
 	font-weight: normal;
 }
 
+/********************************************************/
+/*                    Layout                            */
+/********************************************************/
+/*
+.page:before {
+    content: '';
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6; 
+}
+*/
 
 /********************************************************/
 /*                    Navigation bar                    */
@@ -156,6 +171,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	line-height:1.3em;
 	font-weight:normal;
 	margin-bottom:75px;
+	text-align: justify;
 }
 
 @media (max-width: 767px) {
@@ -203,6 +219,10 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
 	background: rgba(255,255,255,.5);
 }
+#work .btn-work {
+	padding-left: 5px;
+	padding-right: 5px;
+}
 
 
 
@@ -212,16 +232,47 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .thumbnail {
 	background-color: rgba(255,255,255,.2);
 	border: 0 none;
-	padding:10px;
+	padding:5px;
 	-webkit-border-radius: 2px;
 	   -moz-border-radius: 2px;
 	        border-radius: 2px;
+	opacity: 1;
+	transition: opacity .5s;
 }
+
+.thumbnail.thumbnail-hide {
+	opacity: 0;
+	transition: opacity .5s;
+}
+
 .thumbnail .caption {
 	color: inherit;
 }
 
+.thumbnail.work-thumbnail {
+	margin-top: 20px;
+}
 
+@media screen and (min-width: 768px) {
+	.thumbnail.work-thumbnail {
+		width: 32%;
+		margin: 20px 0.6% 0 0.6%;
+	}
+}
+
+.work-hover {
+	opacity: 0;
+}
+
+.work-hover:hover {
+	opacity: 1;
+	background-color: #fff;
+	color: #000;
+}
+
+.work-items {
+	float: left;
+}
 
 /********************************************************/
 /*                 Everything else                      */
@@ -244,35 +295,6 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	width:340px; 
 	margin:0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /***********************************************************/
 /*                   Theme: text shadows                   */
