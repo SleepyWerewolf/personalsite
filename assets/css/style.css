@@ -1,0 +1,22 @@
+/* Background images */
+html {
+    -webkit-transition: background-image 1.2s ease-in-out;
+    -moz-transition: background-image 1.2s ease-in-out;
+    -o-transition: background-image 1.2s ease-in-out;
+    transition: background-image 1.2s ease-in-out;
+}
+html.head, html.work {
+    background-image: url(../images/body1.jpg);
+}
+html.about, html.contact {
+    background-image: url(../images/body6.jpg);
+}
+
+/* Sections */
+.section#about .container, .section#contact .container {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    padding: 42px 0;
+    border: 10px solid rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
