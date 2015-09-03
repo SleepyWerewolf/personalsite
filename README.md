@@ -1,10 +1,4 @@
-Viet Truong Web Development Personal Portfolio
+My Personal Portfolio
 =============
 
-Based on the Magister template, the goal with this redesign is to take minimalism too far.
-
-Credits
--------
-* Design: Sergey Pozhilov** - http://pozhilov.com
-* Development: Viet Truong - http://viettruongwebdevelopment.com
-* Photos and videos used in website courtesy of XXXXX
+I outgrew my old site, so I made a new one. The goal with this redesign is to take minimalism and software/hipster culture too far.
